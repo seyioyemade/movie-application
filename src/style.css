@@ -14,7 +14,8 @@ body {
   padding: 2rem 5rem;
 }
 
-header, ul {
+header,
+ul {
   display: flex;
 }
 
