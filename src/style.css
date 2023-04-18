@@ -3,3 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer hr {
+  width: 100%;
+}
+
+.footer p{
+  padding: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.black {
+  height: 50px;
+  background-color: lightgray;
+  border-top: 1px solid black;
+}
