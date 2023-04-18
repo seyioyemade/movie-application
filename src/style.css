@@ -3,3 +3,49 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 5rem;
+}
+
+header, ul {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  gap: 4rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+header img {
+  width: 10%;
+}
