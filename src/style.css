@@ -62,6 +62,7 @@ header img {
     'card card card';
   justify-content: center;
   gap: 3rem;
+  padding: 5rem 0 9rem;
 }
 
 .card {
