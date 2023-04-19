@@ -42,6 +42,15 @@ a:hover {
   color: black;
 }
 
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
 header img {
   width: 10%;
 }
@@ -106,6 +115,97 @@ header img {
   transition: 0.5s;
 }
 
+input, textarea {
+  display: block;
+}
+
+.popup-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+
+}
+
+.popup {
+  border: 2px solid black;
+  width: 40%;
+  padding: 2rem;
+}
+
+.popup>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.popup>div:nth-child(2) {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-img, .popup p, h1 {
+  margin-bottom: 1rem;
+}
+
+.comments, .comment-form {
+  margin-top: 3rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  border: 2px solid black;
+}
+
+input, textarea {
+  padding: 0.5rem;
+}
+
+input,
+input::placeholder,
+button, textarea, textarea::placeholder {
+  color: #000;
+  font-weight: 700;
+}
+
+textarea {
+  margin: 2rem 0;
+}
+
+.submit-cont {
+  display: flex;
+  justify-content: center;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 1px #000;
+  width: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+}
+
 .footer {
   position: absolute;
   width: 100%;
@@ -149,4 +249,14 @@ header img {
       'card''card''card';
     justify-content: center;
   }
+
+}
+
+.hide {
+  display: none;
+}
+
+.test-btn {
+  display: flex;
+  justify-content: center;
 }
