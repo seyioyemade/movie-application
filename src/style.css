@@ -59,9 +59,18 @@ input, textarea {
   display: block;
 }
 
+.popup-cont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+
+}
+
 .popup {
   border: 2px solid black;
-  width: 45%;
+  width: 40%;
   padding: 2rem;
 }
 
@@ -88,6 +97,12 @@ input, textarea {
 
 h2 {
   margin-bottom: 2rem;
+}
+
+.close {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 input,
@@ -119,7 +134,6 @@ textarea {
 form button {
   padding: 0.5rem 1rem;
   box-shadow: 3px 3px 1px #000;
-  cursor: pointer;
   width: 60%;
 }
 
@@ -146,4 +160,11 @@ form {
   padding: 3rem 5rem;
 }
 
+.hide {
+  display: none;
+}
 
+.test-btn {
+  display: flex;
+  justify-content: center;
+}
