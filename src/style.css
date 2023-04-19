@@ -77,15 +77,8 @@ header img {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-}
 
-.movie-title {
-  margin-top: 2rem;
-}
-
-.like-btn {
-  position: relative;
-  margin-top: 1.5rem;
+header img {
   width: 10%;
 }
 
@@ -197,8 +190,8 @@ form {
 
 .footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  margin-top: 2rem;
 }
 
 .footer hr {
@@ -251,3 +244,4 @@ form {
 .hide {
   display: none;
 }
+
