@@ -13,6 +13,7 @@ const createList = async () => {
     movieCard.className = 'card';
 
     const picture = document.createElement('img');
+    picture.alt = 'Movie photo'
     picture.src = content.image.medium;
     movieCard.appendChild(picture);
 
@@ -22,6 +23,7 @@ const createList = async () => {
     movieCard.appendChild(title);
 
     const like = document.createElement('img');
+    like.alt = 'Like button'
     like.className = 'like-btn';
     like.src = likeImage;
     movieCard.appendChild(like);

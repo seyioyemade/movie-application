@@ -79,7 +79,6 @@ header img {
 
 .like-btn {
   position: relative;
-  right: 30%;
   margin-top: 1.5rem;
   width: 10%;
 }
@@ -123,7 +122,7 @@ header img {
 @media (max-width: 1000px) {
   .home {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       'card card'
