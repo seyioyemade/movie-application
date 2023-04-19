@@ -89,6 +89,10 @@ header img {
   width: 10%;
 }
 
+.like-cont {
+  font-style: oblique;
+}
+
 .genre {
   margin-top: 1.5rem;
 }
