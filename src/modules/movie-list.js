@@ -1,4 +1,5 @@
-import likeImage from './assets/Like-emoji.png';
+import likeImage from '../assets/Like-emoji.png';
+import { display, close } from './display-popup.js';
 
 const createList = async () => {
   const container = document.querySelector('.home');
@@ -41,6 +42,14 @@ const createList = async () => {
     const comment = document.createElement('button');
     comment.className = 'comment-btn';
     comment.textContent = 'Comments';
+
+    comment.addEventListener('click', () => {
+      display(content.image.medium, content.name, content.genres, content.language,
+        content.schedule.days[0], content.schedule.time, content.rating.average, content.status);
+
+      close();
+    });
+
     movieCard.appendChild(comment);
 
     container.appendChild(movieCard);
