@@ -3,10 +3,10 @@ import { display, close } from './display-popup.js';
 import { addLike } from './likes.js';
 
 const getLikes = async () => {
-  const response =  await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CAgGSvEwNloHCTrC5zAj/likes/')
-  const data = await response.json()
-  return data
-}
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CAgGSvEwNloHCTrC5zAj/likes/');
+  const data = await response.json();
+  return data;
+};
 
 const createList = async () => {
   const container = document.querySelector('.home');
@@ -37,23 +37,24 @@ const createList = async () => {
     likeBtn.src = likeImage;
     movieCard.appendChild(likeBtn);
 
-    const likes = document.createElement('p')
-likes.className = 'like-cont'
-likes.innerHTML = '0 likes'
-getLikes().then((data) => {
-  data.filter((item) => {
-    if (item.item_id === `item${id}`) {
-      likes.innerHTML = `${item.likes} likes`;
-    }
-    })
-})
+    const likes = document.createElement('p');
+    likes.className = 'like-cont';
+    likes.innerHTML = '0 likes';
+    getLikes().then((data) => {
+      data.filter((id, item) => {
+        if (item.item_id === `item${id}`) {
+          likes.innerHTML = `${item.likes} likes`;
+        }
+        return '';
+      });
+    });
 
-movieCard.appendChild(likes)
+    movieCard.appendChild(likes);
 
-likeBtn.onclick = (e) => {
-  const { id } = e.target.parentElement;
-  addLike(id, likes)
-}
+    likeBtn.onclick = (e) => {
+      const { id } = e.target.parentElement;
+      addLike(id, likes);
+    };
 
     const genre = document.createElement('p');
     genre.className = 'genre';
