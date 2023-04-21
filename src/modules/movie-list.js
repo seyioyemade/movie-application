@@ -38,20 +38,18 @@ const createList = async () => {
     likeBtn.src = likeImage;
     movieCard.appendChild(likeBtn);
 
-    
     const likes = document.createElement('p');
     likes.className = 'like-cont';
     getLikes().then((data) => {
       data.filter((item) => {
         if (item.item_id === `item${content.id}`) {
           likes.innerHTML = `${item.likes} likes`;
-        } 
+        }
         return '';
-      })
+      });
     });
 
-
-movieCard.appendChild(likes);
+    movieCard.appendChild(likes);
 
     likeBtn.onclick = (e) => {
       const { id } = e.target.parentElement;
