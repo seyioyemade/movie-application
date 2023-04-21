@@ -6,7 +6,7 @@ import movieCounter from './item-count.js';
 const getLikes = async () => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CAgGSvEwNloHCTrC5zAj/likes/');
   const data = await response.json();
-  return data.likes;
+  return data;
 };
 
 const createList = async () => {
@@ -41,10 +41,9 @@ const createList = async () => {
     
     const likes = document.createElement('p');
     likes.className = 'like-cont';
-    likes.innerHTML = '0 likes';
     getLikes().then((data) => {
       data.filter((item) => {
-        if (item.item_id === `item${content.id}` && likes.innerHTML) {
+        if (item.item_id === `item${content.id}`) {
           likes.innerHTML = `${item.likes} likes`;
         } 
         return '';
