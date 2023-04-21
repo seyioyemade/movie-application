@@ -37,7 +37,7 @@ const createList = async () => {
     likeBtn.className = 'like-btn';
     likeBtn.src = likeImage;
     movieCard.appendChild(likeBtn);
-    
+
     const likes = document.createElement('p');
     likes.className = 'likes';
     getLikes().then((data) => {
@@ -47,10 +47,9 @@ const createList = async () => {
         }
         return '';
       });
-    })
+    });
 
-    movieCard.appendChild(likes)
-    
+    movieCard.appendChild(likes);
 
     likeBtn.onclick = (e) => {
       const { id } = e.target.parentElement;
