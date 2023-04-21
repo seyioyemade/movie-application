@@ -41,15 +41,17 @@ const createList = async () => {
     
     const likes = document.createElement('p');
     likes.className = 'like-cont';
-    likes.innerHTML = '0 likes';
-    getLikes().then((data) => {
+    likes.textContent = '0 likes';
+  
+    document.addEventListener('DOMContentLoaded', async () => {
+      const data = await getLikes();
       data.filter((item) => {
-        if (item.item_id === `item${content.id}` && likes.innerHTML) {
-          likes.innerHTML = `${item.likes} likes`;
+        if (item.item_id === `item${content.id}`) {
+          likes.textContent = `${item.likes} likes`;
         } 
         return '';
       })
-    });
+    })
 
 
 movieCard.appendChild(likes);
