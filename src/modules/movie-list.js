@@ -1,6 +1,5 @@
 import likeImage from '../assets/Like-emoji.png';
 import { display, close } from './display-popup.js';
-// import {commentsData} from './comments.js';
 
 const createList = async () => {
   const container = document.querySelector('.home');

@@ -1,4 +1,4 @@
-import commentsData from './comments.js';
+import { commentsData, addComment } from './comments.js';
 
 const mainContainer = document.querySelector('main');
 const popupContainer = document.createElement('section');
@@ -64,6 +64,9 @@ export const display = (img, title, genres, lang, days, time, rating, sts, id) =
   submit.setAttribute('type', 'submit');
   submit.className = 'comment-btn';
   submitCont.appendChild(submit);
+
+  addComment(form, id, input, textarea, commentsList);
+
   form.append(input, textarea, submitCont);
   formCont.append(formTitle, form);
   allDetailsCont.append(movieImgCont, movieInfo, commentsCont, formCont);
