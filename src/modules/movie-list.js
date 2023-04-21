@@ -1,11 +1,12 @@
 import likeImage from '../assets/Like-emoji.png';
 import { display, close } from './display-popup.js';
 import { addLike } from './likes.js';
+import movieCounter from './item-count.js';
 
 const getLikes = async () => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/CAgGSvEwNloHCTrC5zAj/likes/');
   const data = await response.json();
-  return data;
+  return data.likes;
 };
 
 const createList = async () => {
@@ -37,19 +38,21 @@ const createList = async () => {
     likeBtn.src = likeImage;
     movieCard.appendChild(likeBtn);
 
+    
     const likes = document.createElement('p');
     likes.className = 'like-cont';
     likes.innerHTML = '0 likes';
     getLikes().then((data) => {
-      data.filter((id, item) => {
-        if (item.item_id === `item${id}`) {
+      data.filter((item) => {
+        if (item.item_id === `item${content.id}` && likes.innerHTML) {
           likes.innerHTML = `${item.likes} likes`;
-        }
+        } 
         return '';
-      });
+      })
     });
 
-    movieCard.appendChild(likes);
+
+movieCard.appendChild(likes);
 
     likeBtn.onclick = (e) => {
       const { id } = e.target.parentElement;
@@ -81,6 +84,7 @@ const createList = async () => {
 
     container.appendChild(movieCard);
   });
+  movieCounter();
 };
 
 export default createList;
