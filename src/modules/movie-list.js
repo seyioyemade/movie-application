@@ -38,23 +38,21 @@ const createList = async () => {
     likeBtn.src = likeImage;
     movieCard.appendChild(likeBtn);
 
-    
     const likes = document.createElement('p');
     likes.className = 'like-cont';
     likes.textContent = '0 likes';
-  
+
     document.addEventListener('DOMContentLoaded', async () => {
       const data = await getLikes();
       data.filter((item) => {
         if (item.item_id === `item${content.id}`) {
           likes.textContent = `${item.likes} likes`;
-        } 
+        }
         return '';
-      })
-    })
+      });
+    });
 
-
-movieCard.appendChild(likes);
+    movieCard.appendChild(likes);
 
     likeBtn.onclick = (e) => {
       const { id } = e.target.parentElement;
