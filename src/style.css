@@ -89,6 +89,10 @@ header img {
   width: 10%;
 }
 
+.like-btn:hover {
+  cursor: pointer;
+}
+
 .like-cont {
   font-style: oblique;
 }
