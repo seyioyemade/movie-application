@@ -1,6 +1,6 @@
 const { JSDOM } = require('jsdom');
 
-const movieCounter = require('./item-count.js');
+const movieCounter = require('../modules/item-count.js');
 
 describe('movieCounter', () => {
   beforeEach(() => {
