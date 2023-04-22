@@ -8,7 +8,7 @@ export const commentsData = async (id, ul, header) => {
     ul.innerHTML += `<li>${item.creation_date} ${item.username}: ${item.comment}</li>`;
   });
 
-  commentsCounter(ul, header);
+  await commentsCounter(ul, header);
 };
 
 export const postData = async (id, input, textarea) => {
