@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import commentsCounter from '../modules/counter-comments';
+import commentsCounter from '../modules/counter-comments.js';
 
 describe('commentsCounter', () => {
   test('updates the header text with the correct comment count', async () => {
