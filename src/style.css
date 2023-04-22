@@ -13,8 +13,12 @@ body {
   font-size: 1.6rem;
 }
 
-header,
 ul {
+  gap: 4rem;
+}
+
+header,
+header ul {
   display: flex;
 }
 
@@ -22,10 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5rem;
-}
-
-ul {
-  gap: 4rem;
 }
 
 li {
@@ -152,15 +152,19 @@ textarea {
   align-items: center;
 }
 
+.comments-list > li {
+  margin-bottom: 1rem;
+}
+
 .movie-img,
-.popup p,
+.more-info > li,
 h1 {
   margin-bottom: 1rem;
 }
 
 .comments,
 .comment-form {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .close {
