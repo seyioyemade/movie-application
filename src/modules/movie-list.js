@@ -39,7 +39,7 @@ const createList = async () => {
     movieCard.appendChild(likeBtn);
 
     const likes = document.createElement('p');
-    likes.className = 'likes';
+    likes.className = 'like-cont';
     getLikes().then((data) => {
       data.filter((item) => {
         if (item.item_id === `item${content.id}`) {
@@ -72,7 +72,8 @@ const createList = async () => {
 
     comment.addEventListener('click', () => {
       display(content.image.medium, content.name, content.genres, content.language,
-        content.schedule.days[0], content.schedule.time, content.rating.average, content.status);
+        content.schedule.days[0], content.schedule.time, content.rating.average,
+        content.status, content.id);
 
       close();
     });
