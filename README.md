@@ -59,7 +59,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](Coming Soon)
+- [Live Demo Link](https://seyioyemade.github.io/API-based-webapp/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,6 +117,12 @@ To run tests, run the following command:
 - GitHub: [@yegonkimutai](https://github.com/yegonkimutai)
 - Twitter: [@yegonbrian8](https://twitter.com/yegonbrian8)
 - LinkedIn: [Brian Yegon](https://www.linkedin.com/in/brian-yegon-0717a1241/)
+
+👤 **Seyi Oyemade**
+
+- GitHub: [@seyioyemade](https://github.com/seyioyemade)
+- Twitter: [@seyi_oyemade](https://twitter.com/@seyi_oyemade)
+- LinkedIn: [Seyi Oyemade](https://www.linkedin.com/in/seyi-oyemade-523ab1142/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
