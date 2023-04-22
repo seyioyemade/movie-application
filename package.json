@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/seyioyemade/API-based-webapp#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
     "@babel/plugin-transform-modules-commonjs": "^7.21.2",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -40,5 +42,12 @@
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.3"
+  },
+  "main": "babel.config.js",
+  "dependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "jest-fetch-mock": "^3.0.3",
+    "jquery": "^3.6.4",
+    "jsdom": "^21.1.1"
   }
 }
