@@ -34,11 +34,11 @@ export const display = (img, title, genres, lang, days, time, rating, sts, id) =
   const commentsCont = document.createElement('div');
   commentsCont.className = 'comments';
   const commentsTitle = document.createElement('h2');
-  commentsTitle.textContent = 'Comments';
+  commentsTitle.className = 'comments-title';
   const commentsList = document.createElement('ul');
   commentsList.className = 'comments-list';
 
-  commentsData(commentsList, id);
+  commentsData(id, commentsList, commentsTitle);
 
   commentsCont.append(commentsTitle, commentsList);
   const formCont = document.createElement('div');
@@ -65,7 +65,7 @@ export const display = (img, title, genres, lang, days, time, rating, sts, id) =
   submit.className = 'comment-btn';
   submitCont.appendChild(submit);
 
-  addComment(form, id, input, textarea, commentsList);
+  addComment(form, id, input, textarea, commentsTitle, commentsList);
 
   form.append(input, textarea, submitCont);
   formCont.append(formTitle, form);
@@ -84,3 +84,19 @@ export const close = () => {
     popupContainer.remove();
   });
 };
+
+// const cardContainer = document.querySelector('.display-container');
+// mainContainer.addEventListener('click', async (e) => {
+//   if (e.target.className === 'comment-btn') {
+//     // const comment = await getComments(Number(e.target.id));
+//     // displayComment(comment);
+
+//     const li = document.querySelectorAll('.comment-lists li');
+//     // console.log(ul)
+//     console.log(li)
+//     console.log(e.target)
+//     // console.log(counter)
+
+//     // header.textContent = `Comments (${counter})`;
+//   }
+// })
