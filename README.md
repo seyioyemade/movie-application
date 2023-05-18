@@ -59,7 +59,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://seyioyemade.github.io/API-based-webapp/dist/)
+- [Live Demo Link](https://seyioyemade.github.io/movie-application/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
