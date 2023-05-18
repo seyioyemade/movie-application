@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [API-based-webapp] <a name="about-project"></a>
+# 📖 Movie Application <a name="about-project"></a>
 
-**[API-based-webapp]** is a project of creating a Movie website using the HTML, CSS and JavaScript to dynamically create the scoreboard. It also involve using of webpack so as to lead and manage the packages in the code. The project involves the use of API to fetch and interact with data from the board and also post and retrieve data from the API.
+**Movie Application** involves the use of API to fetch and interact with some movies data on the website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
