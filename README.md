@@ -50,10 +50,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Use JavaScript to submit and refresh the data]**
-- **[Use webpack to manage the code]**
-- **[Use css to modify the appearance of the list]**
-- **[Use ES6 to modify the javaScript code]**
+- **See movies displayed**
+- **Like movies**
+- **Comment on movies**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
